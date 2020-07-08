@@ -12,7 +12,7 @@
 }
 
 .navbar-reduce {
-    background: rgba(0 , 0 , 0 , .3);
+    background: rgba(0 , 0 , 0 , .7);
     backdrop-filter: blur(.5rem);
 }
 
@@ -668,6 +668,7 @@
 
 .btn-svg , .btn-img , .btn-img2 , .btn-img3{
     transition: all .5s ease-in-out;
+    margin-top: .1rem;
 }
 
 .btn-white {
@@ -826,7 +827,7 @@
 
 #project-filters li:hover , #project-filters li.filter-active  {
     border: 1px solid #000;
-
+    font-weight: bold;
 }
   
 #projects ul li:last-child {
@@ -836,14 +837,20 @@
 .project-item {
     margin-bottom: 2rem;
     width: 100%;
-    height: 18.6rem;
-    object-fit: initial ;
+    height: auto;
+
+    overflow: hidden;
+    left: 0;
+    right: 0;
 }
 
 
 .project-item img {
     width: 100%;
-    height: 100% ;
+    height: 18.6rem ;
+    left: 0;
+    right: 0;
+    object-fit: contain;
     /* box-shadow: 4px 12px 50px rgba(29, 29, 29, 0.08); */
 }
 
@@ -1069,6 +1076,18 @@
 .contact-link h4 , .contact-link p {
     color: #999;
 }
+
+.btn-icon {
+    transition: .6s;
+}
+
+#contact .btn-white:hover>.btn-icon {
+    color: white;
+}
+
+
+
+
 
 
 
